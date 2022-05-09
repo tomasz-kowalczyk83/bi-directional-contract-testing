@@ -12,4 +12,6 @@ class Product extends Model
     protected $guarded = [
         'id'
     ];
+
+    protected $table = 'products';
 }

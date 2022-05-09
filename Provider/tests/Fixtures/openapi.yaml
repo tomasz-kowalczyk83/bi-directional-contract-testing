@@ -3,7 +3,7 @@ info:
   title: Product API
   version: '1.0.0'
 paths:
-  /api/products:
+  /products:
     get:
       summary: List all products
       description: Returns all products
@@ -39,7 +39,7 @@ paths:
               schema:
                 oneOf:
                   - $ref: '#/components/schemas/Product'
-  /api/product/{id}:
+  /product/{id}:
     get:
       summary: Find product by ID
       description: Returns a single product
