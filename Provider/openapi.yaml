@@ -39,13 +39,13 @@ paths:
               schema:
                 oneOf:
                   - $ref: '#/components/schemas/Product'
-  /api/product/{id}:
+  /api/products/{product}:
     get:
       summary: Find product by ID
       description: Returns a single product
       operationId: getProductByID
       parameters:
-        - name: id
+        - name: product
           in: path
           description: ID of a product to get
           schema: 
@@ -66,11 +66,21 @@ paths:
         400:
           description: Inalid ID supplied
           content: 
-            {}
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
         404:
           description: Produt not found
           content:
-            {}      
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string      
 components:
   schemas:
     Product:
