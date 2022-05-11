@@ -1,0 +1,21 @@
+{
+  "name": "tom-demo-bi-directional-consumer-mocha-example",
+  "version": "1.0.0",
+  "description": "tom-demo-bi-directional-consumer Pact example using Mocha",
+  "main": "tom-demo-bi-directional-consumer.js",
+  "scripts": {
+    "test": "rimraf pacts && mocha",
+    "pact": "node ./test/publish.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.11.1",
+    "chai": "^3.5.0",
+    "dotenv": "^16.0.1",
+    "mocha": "^5.1.1",
+    "rimraf": "^2.6.2"
+  }
+}
