@@ -1,0 +1,21 @@
+{
+    "name": "tomskii26/consumer-b",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Tomskii26\\ConsumerB\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tomasz Kowalczyk",
+            "email": "tomasz.kowalczyk@eorigen.com"
+        }
+    ],
+    "require-dev": {
+        "pact-foundation/pact-php": "^7.1"
+    },
+    "scripts": {
+        "test": "phpunit --debug -c phpunit.xml"
+    }
+}

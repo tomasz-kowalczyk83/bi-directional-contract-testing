@@ -1,0 +1,36 @@
+{
+  "consumer": {
+    "name": "tom-demo-bi-directional-consumer-b"
+  },
+  "provider": {
+    "name": "tom-demo-bi-directional-provider"
+  },
+  "interactions": [
+    {
+      "description": "a get request to /api/products",
+      "request": {
+        "method": "GET",
+        "path": "/api/products",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "data": [
+
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
