@@ -38,9 +38,11 @@ class ProductsTest extends TestCase
 
     public function testGetProductEndpoint() 
     {
-        echo $this->id;
-        $this
-            ->getJson("/api/products/{$this->id}")
+        $this->withoutExceptionHandling();
+
+        $response = $this->getJson("/api/products/{$this->id}");
+        
+        $response    
             ->assertValidRequest()
             ->assertValidResponse(200);
     }

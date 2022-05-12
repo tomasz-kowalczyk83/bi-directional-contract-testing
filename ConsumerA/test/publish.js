@@ -24,7 +24,7 @@ const opts = {
   consumerVersion: gitSha,
   tags: [branch],
 }
-console.log(process.env.PACTFLOW_TOKEN)
+
 new Publisher(opts)
   .publishPacts()
   .then(() => {

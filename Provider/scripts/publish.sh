@@ -16,7 +16,7 @@ else
 fi
 
 REPORT=$(echo 'tested via Spectator' | base64)
-echo "${GIT_COMMIT}"
+
 echo "==> Uploading OAS to Pactflow"
 curl \
   -v \
